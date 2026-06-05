@@ -1,0 +1,270 @@
+05-Jun-2026 22:10:49.996 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.20
+05-Jun-2026 22:10:50.000 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 12:49:58 UTC
+05-Jun-2026 22:10:50.000 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.20.0
+05-Jun-2026 22:10:50.000 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+05-Jun-2026 22:10:50.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+05-Jun-2026 22:10:50.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2026 22:10:50.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-25.0.2
+05-Jun-2026 22:10:50.002 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.2+10-LTS-69
+05-Jun-2026 22:10:50.002 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+05-Jun-2026 22:10:50.002 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20
+05-Jun-2026 22:10:50.002 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20
+05-Jun-2026 22:10:50.018 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\conf\logging.properties
+05-Jun-2026 22:10:50.019 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2026 22:10:50.019 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2026 22:10:50.019 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2026 22:10:50.019 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2026 22:10:50.020 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2026 22:10:50.020 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+05-Jun-2026 22:10:50.020 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Jun-2026 22:10:50.020 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2026 22:10:50.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20
+05-Jun-2026 22:10:50.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20
+05-Jun-2026 22:10:50.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\temp
+05-Jun-2026 22:10:50.183 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+05-Jun-2026 22:10:50.195 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+05-Jun-2026 22:10:50.527 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2026 22:10:50.558 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [803] milliseconds
+05-Jun-2026 22:10:50.606 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2026 22:10:50.607 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+05-Jun-2026 22:10:50.621 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\docs]
+05-Jun-2026 22:10:51.004 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\docs] has finished in [379] ms
+05-Jun-2026 22:10:51.004 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\examples]
+05-Jun-2026 22:10:51.707 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\examples] has finished in [703] ms
+05-Jun-2026 22:10:51.709 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\host-manager]
+05-Jun-2026 22:10:51.780 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\host-manager] has finished in [72] ms
+05-Jun-2026 22:10:51.780 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\manager]
+05-Jun-2026 22:10:51.836 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\manager] has finished in [56] ms
+05-Jun-2026 22:10:51.836 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\ROOT]
+05-Jun-2026 22:10:51.862 SEVERE [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [113] column [3]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/avish/OneDrive/New%20folder/tomcat/apache-tomcat-10.1.20/webapps/ROOT/WEB-INF/web.xml; lineNumber: 113; columnNumber: 3; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1423)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:635)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:551)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:890)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:826)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:137)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1225)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:629)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4796)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1130)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:125)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1041)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+05-Jun-2026 22:10:51.865 SEVERE [main] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at [file:/C:/Users/avish/OneDrive/New%20folder/tomcat/apache-tomcat-10.1.20/webapps/ROOT/WEB-INF/web.xml]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/avish/OneDrive/New%20folder/tomcat/apache-tomcat-10.1.20/webapps/ROOT/WEB-INF/web.xml; lineNumber: 113; columnNumber: 3; The markup in the document following the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1423)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:635)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:551)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:890)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:826)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:137)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1225)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:629)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4796)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:712)
+		at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1130)
+		at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1933)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:125)
+		at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1041)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1629)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:114)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:345)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:893)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:921)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:757)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+05-Jun-2026 22:10:51.866 SEVERE [main] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line [113] column [3]
+05-Jun-2026 22:10:51.871 SEVERE [main] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+05-Jun-2026 22:10:51.872 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+05-Jun-2026 22:10:51.873 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [] startup failed due to previous errors
+05-Jun-2026 22:10:51.885 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\ROOT] has finished in [48] ms
+05-Jun-2026 22:10:51.889 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2026 22:10:51.923 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1361] milliseconds
+05-Jun-2026 22:14:09.336 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.20
+05-Jun-2026 22:14:09.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 12:49:58 UTC
+05-Jun-2026 22:14:09.342 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.20.0
+05-Jun-2026 22:14:09.345 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+05-Jun-2026 22:14:09.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+05-Jun-2026 22:14:09.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2026 22:14:09.348 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-25.0.2
+05-Jun-2026 22:14:09.349 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.2+10-LTS-69
+05-Jun-2026 22:14:09.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+05-Jun-2026 22:14:09.351 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20
+05-Jun-2026 22:14:09.353 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20
+05-Jun-2026 22:14:09.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\conf\logging.properties
+05-Jun-2026 22:14:09.369 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2026 22:14:09.369 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2026 22:14:09.369 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2026 22:14:09.369 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2026 22:14:09.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2026 22:14:09.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+05-Jun-2026 22:14:09.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Jun-2026 22:14:09.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2026 22:14:09.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20
+05-Jun-2026 22:14:09.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20
+05-Jun-2026 22:14:09.373 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\temp
+05-Jun-2026 22:14:09.383 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+05-Jun-2026 22:14:09.402 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+05-Jun-2026 22:14:09.892 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2026 22:14:09.931 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [873] milliseconds
+05-Jun-2026 22:14:09.993 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2026 22:14:09.994 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+05-Jun-2026 22:14:10.011 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\docs]
+05-Jun-2026 22:14:10.534 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\docs] has finished in [509] ms
+05-Jun-2026 22:14:10.535 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\examples]
+05-Jun-2026 22:14:11.452 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\examples] has finished in [917] ms
+05-Jun-2026 22:14:11.453 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\host-manager]
+05-Jun-2026 22:14:11.540 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\host-manager] has finished in [87] ms
+05-Jun-2026 22:14:11.541 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\manager]
+05-Jun-2026 22:14:11.663 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\manager] has finished in [122] ms
+05-Jun-2026 22:14:11.664 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\ROOT]
+05-Jun-2026 22:14:11.878 WARNING [main] com.sgs.logging.AppLogger.<clinit> Failed to initialize file logging: logs\sgs-application.log.0.lck
+05-Jun-2026 22:14:11.890 INFO [main] com.sgs.logging.AppLogger.log [ApplicationInitializer] === APPLICATION STARTUP ===
+05-Jun-2026 22:14:11.891 INFO [main] com.sgs.logging.AppLogger.log [ApplicationInitializer] Application context initializing: Student Grading System - Enterprise Edition
+05-Jun-2026 22:14:11.894 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+05-Jun-2026 22:14:11.896 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [] startup failed due to previous errors
+05-Jun-2026 22:14:11.898 INFO [main] com.sgs.logging.AppLogger.log [ApplicationInitializer] === APPLICATION SHUTDOWN ===
+05-Jun-2026 22:14:11.899 INFO [main] com.sgs.logging.AppLogger.log [ApplicationInitializer] Application context destroying: Student Grading System - Enterprise Edition
+05-Jun-2026 22:14:11.900 INFO [main] com.sgs.logging.AppLogger.log [ApplicationInitializer] Resource cleanup completed
+05-Jun-2026 22:14:11.902 INFO [main] com.sgs.logging.AppLogger.log [ApplicationInitializer] Application shutdown completed
+05-Jun-2026 22:14:11.902 INFO [main] com.sgs.logging.AppLogger.log [ApplicationInitializer] === APPLICATION STOPPED ===
+05-Jun-2026 22:14:11.919 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\ROOT] has finished in [255] ms
+05-Jun-2026 22:14:11.929 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2026 22:14:11.966 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2030] milliseconds
+05-Jun-2026 22:16:04.168 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+05-Jun-2026 22:16:04.174 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+05-Jun-2026 22:16:04.196 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+05-Jun-2026 22:16:04.304 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+05-Jun-2026 22:16:04.325 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+05-Jun-2026 22:16:11.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.20
+05-Jun-2026 22:16:11.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 12:49:58 UTC
+05-Jun-2026 22:16:11.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.20.0
+05-Jun-2026 22:16:11.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+05-Jun-2026 22:16:11.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+05-Jun-2026 22:16:11.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2026 22:16:11.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-25.0.2
+05-Jun-2026 22:16:11.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.2+10-LTS-69
+05-Jun-2026 22:16:11.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+05-Jun-2026 22:16:11.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20
+05-Jun-2026 22:16:11.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20
+05-Jun-2026 22:16:11.495 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\conf\logging.properties
+05-Jun-2026 22:16:11.495 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2026 22:16:11.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2026 22:16:11.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2026 22:16:11.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2026 22:16:11.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2026 22:16:11.498 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+05-Jun-2026 22:16:11.498 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Jun-2026 22:16:11.498 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2026 22:16:11.498 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20
+05-Jun-2026 22:16:11.499 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20
+05-Jun-2026 22:16:11.499 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\temp
+05-Jun-2026 22:16:11.506 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.7] using APR version [1.7.4].
+05-Jun-2026 22:16:11.521 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+05-Jun-2026 22:16:11.803 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2026 22:16:11.826 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [554] milliseconds
+05-Jun-2026 22:16:11.868 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2026 22:16:11.868 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.20]
+05-Jun-2026 22:16:11.879 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\docs]
+05-Jun-2026 22:16:12.207 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\docs] has finished in [323] ms
+05-Jun-2026 22:16:12.208 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\examples]
+05-Jun-2026 22:16:12.781 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\examples] has finished in [573] ms
+05-Jun-2026 22:16:12.781 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\host-manager]
+05-Jun-2026 22:16:12.831 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\host-manager] has finished in [50] ms
+05-Jun-2026 22:16:12.832 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\manager]
+05-Jun-2026 22:16:12.884 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\manager] has finished in [52] ms
+05-Jun-2026 22:16:12.885 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\ROOT]
+05-Jun-2026 22:16:13.077 WARNING [main] com.sgs.logging.AppLogger.<clinit> Failed to initialize file logging: logs\sgs-application.log.0.lck
+05-Jun-2026 22:16:13.084 INFO [main] com.sgs.logging.AppLogger.log [ApplicationInitializer] === APPLICATION STARTUP ===
+05-Jun-2026 22:16:13.085 INFO [main] com.sgs.logging.AppLogger.log [ApplicationInitializer] Application context initializing: Student Grading System - Enterprise Edition
+05-Jun-2026 22:16:13.087 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+05-Jun-2026 22:16:13.088 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [] startup failed due to previous errors
+05-Jun-2026 22:16:13.090 INFO [main] com.sgs.logging.AppLogger.log [ApplicationInitializer] === APPLICATION SHUTDOWN ===
+05-Jun-2026 22:16:13.090 INFO [main] com.sgs.logging.AppLogger.log [ApplicationInitializer] Application context destroying: Student Grading System - Enterprise Edition
+05-Jun-2026 22:16:13.091 INFO [main] com.sgs.logging.AppLogger.log [ApplicationInitializer] Resource cleanup completed
+05-Jun-2026 22:16:13.091 INFO [main] com.sgs.logging.AppLogger.log [ApplicationInitializer] Application shutdown completed
+05-Jun-2026 22:16:13.091 INFO [main] com.sgs.logging.AppLogger.log [ApplicationInitializer] === APPLICATION STOPPED ===
+05-Jun-2026 22:16:13.098 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\avish\OneDrive\New folder\tomcat\apache-tomcat-10.1.20\webapps\ROOT] has finished in [214] ms
+05-Jun-2026 22:16:13.103 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2026 22:16:13.129 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1301] milliseconds

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Student Grading System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-body">
+
+    <!-- Toast Notification Banner -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Main App Layout Wrapper -->
+    <div class="app-layout">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                    </svg>
+                </div>
+                <h3>SGS Portal</h3>
+                <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close Sidebar">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav class="sidebar-menu">
+                <ul>
+                    <li class="active">
+                        <a href="index.html">
+                            <span class="menu-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="7" height="9"></rect>
+                                    <rect x="14" y="3" width="7" height="5"></rect>
+                                    <rect x="14" y="12" width="7" height="9"></rect>
+                                    <rect x="3" y="16" width="7" height="5"></rect>
+                                </svg>
+                            </span>
+                            Dashboard
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar">AD</div>
+                    <div class="user-details">
+                        <span class="user-name">Administrator</span>
+                        <span class="user-role">SGS System Owner</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="main-container">
+            
+            <!-- Modern Header -->
+            <header class="app-header">
+                <div class="header-left">
+                    <button class="menu-toggle-btn" id="menuToggleBtn" aria-label="Toggle Sidebar">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                    <h2>Dashboard</h2>
+                </div>
+                
+                <div class="header-actions">
+                    <!-- Light / Dark Mode Toggle Button -->
+                    <button class="icon-btn theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme">
+                        <svg id="sunIcon" class="theme-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg id="moonIcon" class="theme-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Logout Action Button -->
+                    <button class="btn btn-secondary btn-logout" id="logoutBtn">
+                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                            <polyline points="16 17 21 12 16 7"></polyline>
+                            <line x1="21" y1="12" x2="9" y2="12"></line>
+                        </svg>
+                        <span>Sign Out</span>
+                    </button>
+                </div>
+            </header>
+
+            <main class="content-wrapper">
+                <section class="overview-hero">
+                    <div class="overview-copy">
+                        <span class="section-kicker">Academic command center</span>
+                        <h1>Student Performance Studio</h1>
+                        <p>Track marks, spot learning gaps, and turn each student's current score into a focused improvement roadmap.</p>
+                    </div>
+                    <div class="hero-insights">
+                        <div class="insight-pill">
+                            <span>Focus</span>
+                            <strong id="heroFocusText">Loading...</strong>
+                        </div>
+                        <div class="insight-pill">
+                            <span>Next Target</span>
+                            <strong id="heroTargetText">Grade A readiness</strong>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Analytics Section -->
+                <section class="analytics-section">
+                    <div class="stat-card">
+                        <div class="stat-icon stat-icon-blue">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-label">Total Students</span>
+                            <h3 class="stat-value" id="totalStudentsCount">0</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon stat-icon-green">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 14 14"></polyline>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-label">Class Average</span>
+                            <h3 class="stat-value" id="classAverageValue">0.0%</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon stat-icon-purple">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                                <polyline points="16 7 22 7 22 13"></polyline>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-label">Top Class Grade</span>
+                            <h3 class="stat-value" id="topGradeValue">N/A</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Grade Distribution Tracker Card -->
+                <section class="distribution-section card">
+                    <div class="card-header">
+                        <h4>Grade Distribution Count</h4>
+                    </div>
+                    <div class="distribution-grid">
+                        <div class="dist-item">
+                            <span class="dist-badge badge-a">Grade A</span>
+                            <h4 id="countA">0</h4>
+                        </div>
+                        <div class="dist-item">
+                            <span class="dist-badge badge-b">Grade B</span>
+                            <h4 id="countB">0</h4>
+                        </div>
+                        <div class="dist-item">
+                            <span class="dist-badge badge-c">Grade C</span>
+                            <h4 id="countC">0</h4>
+                        </div>
+                        <div class="dist-item">
+                            <span class="dist-badge badge-d">Grade D</span>
+                            <h4 id="countD">0</h4>
+                        </div>
+                        <div class="dist-item">
+                            <span class="dist-badge badge-f">Grade F</span>
+                            <h4 id="countF">0</h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="performance-tools">
+                    <div class="leaderboard-card card">
+                        <div class="card-header tools-header">
+                            <div>
+                                <span class="section-kicker">Leaderboard</span>
+                                <h3>Class Ranking</h3>
+                                <p>Students are ranked by average marks with grade and subject-strength signals.</p>
+                            </div>
+                        </div>
+                        <div class="leaderboard-list" id="leaderboardList">
+                            <div class="empty-tool-state">Loading leaderboard...</div>
+                        </div>
+                    </div>
+
+                    <div class="marksheet-card card">
+                        <div class="card-header tools-header">
+                            <div>
+                                <span class="section-kicker">Marksheet generator</span>
+                                <h3>Student Report Card</h3>
+                                <p>Select a student to generate a print-ready marksheet with improvement advice.</p>
+                            </div>
+                            <div class="marksheet-actions">
+                                <select id="marksheetStudentSelect" aria-label="Select student for marksheet">
+                                    <option value="">Select Student</option>
+                                </select>
+                                <button class="btn btn-primary" id="printMarksheetBtn">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                                        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                                        <rect x="6" y="14" width="12" height="8"></rect>
+                                    </svg>
+                                    <span>Print</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="marksheet-preview" id="marksheetPreview">
+                            <div class="empty-tool-state">Choose a student to generate a marksheet.</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="roadmap-section">
+                    <div class="roadmap-panel">
+                        <div class="roadmap-header">
+                            <div>
+                                <span class="section-kicker">Improvement roadmap</span>
+                                <h3 id="roadmapStudentName">Select a Student</h3>
+                                <p id="roadmapSummary">Use the Roadmap button in the table to generate a focused mark-improvement plan.</p>
+                            </div>
+                            <div class="roadmap-score">
+                                <span id="roadmapGrade">--</span>
+                                <strong id="roadmapAverage">0%</strong>
+                            </div>
+                        </div>
+                        <div class="roadmap-body">
+                            <div class="roadmap-focus-card">
+                                <span>Highest priority</span>
+                                <strong id="roadmapWeakSubject">Waiting for selection</strong>
+                                <p id="roadmapWeakSubjectText">The weakest subject will appear here with a practical recovery target.</p>
+                            </div>
+                            <div class="roadmap-steps" id="roadmapSteps">
+                                <div class="roadmap-step">
+                                    <span>1</span>
+                                    <p>Select a student record to build a personal plan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="strategy-panel">
+                        <span class="section-kicker">Class strategy</span>
+                        <h3>How students can increase marks</h3>
+                        <ul>
+                            <li>Review mistakes within 24 hours and rewrite the correct method once.</li>
+                            <li>Practice the weakest subject first for 25 focused minutes daily.</li>
+                            <li>Use weekly mock tests to convert revision into exam speed.</li>
+                            <li>Keep a one-page formula, definition, and example sheet per subject.</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <!-- Two-Column Layout -->
+                <div class="dashboard-grid">
+                    
+                    <!-- Column Left: Add Student Form -->
+                    <div class="column-form">
+                        <section class="card add-student-card">
+                            <div class="card-header">
+                                <h3>Add Student Record</h3>
+                                <p>Provide student credentials and subject marks to compute the grade.</p>
+                            </div>
+                            
+                            <form id="addStudentForm" class="dashboard-form" novalidate>
+                                <div class="form-group">
+                                    <label for="studentName">Student Full Name</label>
+                                    <input type="text" id="studentName" required placeholder="Enter student name">
+                                    <span class="error-msg" id="nameError"></span>
+                                </div>
+                                
+                                <div class="marks-grid">
+                                    <div class="form-group">
+                                        <label for="subject1">Subject 1 Marks</label>
+                                        <input type="number" id="subject1" min="0" max="100" required placeholder="0-100">
+                                        <span class="error-msg" id="s1Error"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="subject2">Subject 2 Marks</label>
+                                        <input type="number" id="subject2" min="0" max="100" required placeholder="0-100">
+                                        <span class="error-msg" id="s2Error"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="subject3">Subject 3 Marks</label>
+                                        <input type="number" id="subject3" min="0" max="100" required placeholder="0-100">
+                                        <span class="error-msg" id="s3Error"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="subject4">Subject 4 Marks</label>
+                                        <input type="number" id="subject4" min="0" max="100" required placeholder="0-100">
+                                        <span class="error-msg" id="s4Error"></span>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block" id="submitStudentBtn">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                    <span>Calculate & Save</span>
+                                </button>
+                            </form>
+                        </section>
+                    </div>
+
+                    <!-- Column Right: Records Table -->
+                    <div class="column-table">
+                        <section class="card records-card">
+                            <div class="card-header records-header">
+                                <div class="header-titles">
+                                    <h3>Student Academic Records</h3>
+                                    <p>Browse, search, filter and manage student listings</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Search & Filtering Actions -->
+                            <div class="table-actions">
+                                <div class="search-box">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="search-icon">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                    <input type="text" id="searchBar" placeholder="Search by ID or name...">
+                                </div>
+                                
+                                <div class="filter-box">
+                                    <select id="gradeFilter">
+                                        <option value="">All Grades</option>
+                                        <option value="A">Grade A</option>
+                                        <option value="B">Grade B</option>
+                                        <option value="C">Grade C</option>
+                                        <option value="D">Grade D</option>
+                                        <option value="F">Grade F</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Responsive Data Table -->
+                            <div class="table-container">
+                                <table id="studentTable">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Sub 1</th>
+                                            <th>Sub 2</th>
+                                            <th>Sub 3</th>
+                                            <th>Sub 4</th>
+                                            <th>Avg</th>
+                                            <th>Grade</th>
+                                            <th>Performance</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="studentTableBody">
+                                        <!-- Dynamic student rows will render here -->
+                                        <tr class="table-loading-row">
+                                            <td colspan="10" class="text-center">Loading student records...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal (Glassmorphic Popup) -->
+    <div class="modal-overlay" id="deleteModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-alert-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                        <line x1="12" y1="9" x2="12" y2="13"></line>
+                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                    </svg>
+                </div>
+                <h3>Delete Student Record</h3>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete <strong id="deleteStudentName">Student</strong>'s grading record? This action cannot be undone and will immediately wipe their data from memory.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelDeleteBtn">Cancel</button>
+                <button class="btn btn-danger" id="confirmDeleteBtn">Delete Record</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

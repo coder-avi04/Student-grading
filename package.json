@@ -1,0 +1,10 @@
+{
+  "name": "student-grading-system",
+  "version": "1.0.0",
+  "description": "Student Grading System Local Server",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {}
+}

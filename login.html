@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Student Grading System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+    <!-- Animated Gradient Background Circles -->
+    <div class="bg-circle bg-circle-1"></div>
+    <div class="bg-circle bg-circle-2"></div>
+
+    <div class="login-container">
+        <!-- Glassmorphism Card -->
+        <div class="login-card" id="loginCard">
+            <div class="login-header">
+                <div class="logo">
+                    <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                    </svg>
+                </div>
+                <h2>Student Grading System</h2>
+                <p>Enter your credentials to access the admin dashboard</p>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm" autocomplete="off">
+                <div class="alert alert-error" id="errorMessage" style="display: none;">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                    <span id="errorText">Invalid credentials</span>
+                </div>
+
+                <!-- Username Input (Floating Label) -->
+                <div class="input-group">
+                    <input type="text" id="username" name="username" required placeholder=" ">
+                    <label for="username">Username</label>
+                    <span class="input-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </span>
+                </div>
+
+                <!-- Password Input (Floating Label + Show/Hide) -->
+                <div class="input-group">
+                    <input type="password" id="password" name="password" required placeholder=" ">
+                    <label for="password">Password</label>
+                    <span class="input-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </span>
+                    <button type="button" class="toggle-password" id="togglePassword" aria-label="Show password">
+                        <svg id="eyeOpen" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <svg id="eyeClosed" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                            <line x1="1" y1="1" x2="23" y2="23"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="rememberMe">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-block btn-login" id="loginBtn">
+                    <span class="btn-text">Sign In</span>
+                    <span class="spinner" id="loginSpinner" style="display: none;"></span>
+                </button>
+            </form>
+
+            <div class="login-footer">
+                <p>Demo Username: <strong>admin</strong> | Password: <strong>admin123</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Check session status on page load
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Restore username if rememberMe was set
+            const savedUser = localStorage.getItem('sgs_remembered_user');
+            if (savedUser) {
+                document.getElementById('username').value = savedUser;
+                document.getElementById('rememberMe').checked = true;
+            }
+
+            try {
+                const res = await fetch('login');
+                const data = await res.json();
+                if (data.loggedIn) {
+                    window.location.href = 'index.html';
+                }
+            } catch (err) {
+                console.error("Session check failed:", err);
+            }
+        });
+
+        // Toggle Password visibility
+        const passwordInput = document.getElementById('password');
+        const togglePasswordBtn = document.getElementById('togglePassword');
+        const eyeOpen = document.getElementById('eyeOpen');
+        const eyeClosed = document.getElementById('eyeClosed');
+
+        togglePasswordBtn.addEventListener('click', () => {
+            const isPassword = passwordInput.getAttribute('type') === 'password';
+            passwordInput.setAttribute('type', isPassword ? 'text' : 'password');
+            eyeOpen.style.display = isPassword ? 'none' : 'block';
+            eyeClosed.style.display = isPassword ? 'block' : 'none';
+        });
+
+        // Form Submit
+        const loginForm = document.getElementById('loginForm');
+        const loginBtn = document.getElementById('loginBtn');
+        const btnText = loginBtn.querySelector('.btn-text');
+        const spinner = document.getElementById('loginSpinner');
+        const errorMessage = document.getElementById('errorMessage');
+        const errorText = document.getElementById('errorText');
+        const loginCard = document.getElementById('loginCard');
+
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            errorMessage.style.display = 'none';
+
+            const username = document.getElementById('username').value.trim();
+            const password = passwordInput.value;
+            const rememberMe = document.getElementById('rememberMe').checked;
+
+            if (!username || !password) {
+                showError("Please fill in all fields.");
+                return;
+            }
+
+            // UI feedback: loading state
+            loginBtn.disabled = true;
+            btnText.style.opacity = '0.5';
+            spinner.style.display = 'inline-block';
+
+            try {
+                const response = await fetch('login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ username, password })
+                });
+
+                const result = await response.json();
+
+                if (response.ok && result.status === 'success') {
+                    if (rememberMe) {
+                        localStorage.setItem('sgs_remembered_user', username);
+                    } else {
+                        localStorage.removeItem('sgs_remembered_user');
+                    }
+                    
+                    // Trigger login success animation then redirect
+                    loginCard.classList.add('login-success-anim');
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 500);
+                } else {
+                    showError(result.message || "Invalid username or password.");
+                    triggerShake();
+                }
+            } catch (err) {
+                showError("Network error. Please try again later.");
+                triggerShake();
+            } finally {
+                loginBtn.disabled = false;
+                btnText.style.opacity = '1';
+                spinner.style.display = 'none';
+            }
+        });
+
+        function showError(msg) {
+            errorText.textContent = msg;
+            errorMessage.style.display = 'flex';
+        }
+
+        function triggerShake() {
+            loginCard.classList.add('shake-anim');
+            setTimeout(() => {
+                loginCard.classList.remove('shake-anim');
+            }, 600);
+        }
+    </script>
+</body>
+</html>
