@@ -138,6 +138,12 @@ Contributions are welcome.
 5. Open a Pull Request
 
 ---
+## 🚀 Deployment
+
+This project is deployed on Netlify and can be accessed online.
+
+Live Link:
+https://agent-6a2309cf8d2eef0f1a8c9306--student-gradiing.netlify.app/index.html
 
 ## 📜 License
 
